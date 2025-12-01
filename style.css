@@ -80,7 +80,7 @@ nav ul li a.active::after {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 80px 100px;
+    padding: 80px 110px;
 }
 
 .hero-text {
@@ -93,6 +93,7 @@ nav ul li a.active::after {
     font-weight: bold;
     line-height: 1;
     margin-bottom: 40px;
+    color: #ff0000;
 }
 
 .hero-text p {
@@ -118,7 +119,36 @@ nav ul li a.active::after {
 }
 
 .hero-img img {
-    width: 550px;
-    height: 560px;
+    width: 500px;
+    height: 550px;
     object-fit: cover;
+    border-radius: 10px;
+}
+.about{
+    padding: 90px ;
+    color: #ababab;
+
+}
+.about-con-1 img{
+    height: 500px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-con-1{
+    flex-basis: 35%;
+
+}
+.about-con-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 50px;
+    font-weight: 100;
+
 }
