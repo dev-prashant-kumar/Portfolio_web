@@ -7,33 +7,36 @@
     <title>Prashant Kumar</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
 </head>
 
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <h1 class="logo">
-                    prashant
-                </h1>
-                <ul>
-                    <li>
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
+                <h1 class="logo">prashant</h1>
+
+                <!-- Hamburger icon -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- Navbar links -->
+                <ul class="nav-links">
+                    <li class="close-btn">&times;</li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+
+
             <section class="hero">
                 <div class="hero-text">
                     <h1>Hello,<br>I'm <span>Prashant Kumar</span></h1>
@@ -41,7 +44,7 @@
                     <p>
                         A passionate developer specializing in web development and software engineering.
                     </p>
-                    <a href="#" class="btn">Learn More</a>
+                    <a href="#skills" class="btn">Learn More</a>
                 </div>
 
                 <div class="hero-img">
@@ -50,7 +53,7 @@
             </section>
         </div>
     </div>
-    <section class="about">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="about-con-1">
@@ -67,11 +70,12 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills">
         <div class="skills-container">
             <div class="skills-title">
                 <span> Skills </span>
-                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quod doloribus temporibus libero asperiores minima itaque velit exercitationem</h4>
+                <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quod doloribus temporibus
+                    libero asperiores minima itaque velit exercitationem</h4>
             </div>
             <div class="skill-grid">
                 <div class="skills-box">
@@ -125,9 +129,151 @@
 
     </section>
 
-    <section class="projects">
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
 
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/53868571-.jpg" alt="E-commerce Website">
+
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>Full-stack MERN e-commerce platform with authentication and admin panel.</p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node</span>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/53868571-.jpg" alt="E-commerce Website">
+
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>Full-stack MERN e-commerce platform with authentication and admin panel.</p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node</span>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/53868571-.jpg" alt="E-commerce Website">
+
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>Full-stack MERN e-commerce platform with authentication and admin panel.</p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node</span>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="images/53868571-.jpg" alt="E-commerce Website">
+
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>Full-stack MERN e-commerce platform with authentication and admin panel.</p>
+
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node</span>
+                        <span>MongoDB</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#">Live</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </section>
+
+    <section id="contact">
+        <div class="contact-container">
+
+            <h2 class="contact-title">Contact</h2>
+            <p class="contact-subtitle">
+                Feel free to reach out for opportunities or collaborations.
+            </p>
+
+            <div class="contact-list">
+
+                <div class="contact-row">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Phone</h3>
+                        <p>+91 9XXXXXXXXX</p>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p>prashant@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-row">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Address</h3>
+                        <p>India</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-container">
+        <h2 class="footer-name">Prashant Kumar</h2>
+
+        <div class="footer-socials">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Prashant Kumar. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
