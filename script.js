@@ -31,3 +31,63 @@ const observer = new IntersectionObserver(
 );
 
 elements.forEach(el => observer.observe(el));
+
+const images = document.querySelectorAll(
+  ".hero-img img, .about-con-1 img, .project-card img"
+);
+
+const imageObserver = new IntersectionObserver(
+  (entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        obs.unobserve(entry.target); // animate once
+      }
+    });
+  },
+  { threshold: 0.25 }
+);
+
+images.forEach(img => imageObserver.observe(img));
+
+const texts = [
+    "Web Developer",
+    "Frontend Developer",
+    "Full Stack Developer",
+    "App Developer"
+];
+
+let index = 0;
+let charIndex = 0;
+let currentText = "";
+let isDeleting = false;
+
+const typingElement = document.getElementById("typing");
+
+function typeEffect() {
+    if (!typingElement) return;
+
+    currentText = texts[index];
+
+    if (!isDeleting) {
+        typingElement.textContent = currentText.slice(0, charIndex++);
+    } else {
+        typingElement.textContent = currentText.slice(0, charIndex--);
+    }
+
+    let speed = isDeleting ? 50 : 100;
+
+    if (!isDeleting && charIndex === currentText.length + 1) {
+        speed = 1200;
+        isDeleting = true;
+    } 
+    else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        index = (index + 1) % texts.length;
+        speed = 500;
+    }
+
+    setTimeout(typeEffect, speed);
+}
+
+typeEffect();
